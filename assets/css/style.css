@@ -44,6 +44,46 @@
   margin: auto;
 }
 
+.bannieredate {
+  background-color: #85d1F5!important;
+  padding: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.wrap {
+  padding: 40px 40px 40px 80px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(133, 209, 245, 0.7);
+}
+
+.hover:hover .overlay {
+  opacity: 1;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -244,7 +284,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
